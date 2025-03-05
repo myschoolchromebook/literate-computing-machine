@@ -1,0 +1,8 @@
+version: '3'
+services:
+  vnc:
+    build: .
+    ports:
+      - "5900:5900"
+    volumes:
+      - .:/workspace
