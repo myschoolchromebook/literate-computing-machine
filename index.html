@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noVNC/1.3.0/core/rfb.js"></script>
     <script>
         const rfb = new RFB(document.getElementById('noVNC_container'), 'ws://localhost:5900', {
-            credentials: { password: '1234' } // Use the password you set for VNC
+            credentials: { password: '1234' }
         });
         rfb.addEventListener('connect', () => {
             console.log('Connected to VNC server');
